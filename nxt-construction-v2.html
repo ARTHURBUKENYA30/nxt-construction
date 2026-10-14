@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NXT Construction | Building, Civil Works &amp; Project Management</title>
+<meta name="description" content="NXT Construction: residential, commercial and civil construction. Call 0786 768 872.">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1F3A;--navy2:#12305a;--or:#FF6A13;--or2:#e85a08;--blue:#1E88E5;--sky:#EAF3FC;--g:#F4F7FB;--txt:#1b2a3d;--mute:#5d6b7e;--wa:#25D366}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font:17px/1.65 Inter,system-ui,sans-serif;color:var(--txt);background:#fff}
+h1,h2,h3,h4{font-family:Outfit,sans-serif;line-height:1.12;color:var(--navy)}
+a{color:inherit}.w{max-width:1200px;margin:0 auto;padding:0 22px}section{padding:90px 0}
+.tag{display:inline-block;background:var(--sky);color:var(--blue);font-weight:600;font-size:14px;padding:5px 14px;border-radius:99px;margin-bottom:14px}
+h2{font-size:clamp(32px,4.6vw,48px);font-weight:800;margin-bottom:14px}.sub{color:var(--mute);max-width:62ch;margin-bottom:44px}
+.c{text-align:center}.c .sub{margin-left:auto;margin-right:auto}
+.btn{display:inline-block;padding:15px 30px;border-radius:10px;font:600 16px Inter,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:.2s}
+.b1{background:var(--or);color:#fff;box-shadow:0 8px 22px rgba(255,106,19,.35)}.b1:hover{background:var(--or2);transform:translateY(-2px)}
+.b2{border-color:#fff;color:#fff}.b2:hover{background:#fff;color:var(--navy)}.b3{background:var(--navy);color:#fff}.b3:hover{background:var(--navy2)}
+:focus-visible{outline:3px solid var(--or);outline-offset:2px}
+.top{background:var(--navy);color:#c9d6e8;font-size:14px;padding:9px 0}.top .w{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.top a{color:#ffb27a;font-weight:600;text-decoration:none}
+header{position:sticky;top:0;z-index:60;background:#fff;box-shadow:0 2px 18px rgba(11,31,58,.09)}
+nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{font:800 30px Outfit;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:10px}.logo i{font-style:normal;background:var(--or);color:#fff;padding:2px 11px;border-radius:8px}
+.menu{display:flex;gap:28px;list-style:none;align-items:center}.menu a{text-decoration:none;font-weight:500}.menu a:hover{color:var(--or)}
+.burger{display:none;background:var(--navy);color:#fff;border:0;border-radius:8px;padding:9px 15px;font-weight:600}
+/* media: SVG art always visible, photo fades in over it */
+.media{position:relative;overflow:hidden;background:var(--navy2)}.media svg,.media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.media img{opacity:0;transition:opacity .6s}.media img.ok{opacity:1}
+.hero{position:relative;color:#fff;min-height:680px;display:flex;align-items:center;overflow:hidden}
+.hero .media{position:absolute;inset:0}.hero:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,rgba(11,31,58,.96) 25%,rgba(18,48,90,.6) 70%,rgba(30,136,229,.25))}
+.hero .w{position:relative;z-index:2;padding-top:90px;padding-bottom:130px}
+.hero .pill{background:rgba(255,106,19,.18);border:1px solid var(--or);color:#ffc9a3;padding:6px 16px;border-radius:99px;font-size:14px;font-weight:600;display:inline-block;margin-bottom:22px}
+.hero h1{color:#fff;font-size:clamp(44px,7.4vw,86px);font-weight:800;max-width:13ch}.hero h1 em{font-style:normal;color:var(--or)}
+.hero p{max-width:54ch;font-size:19px;margin:22px 0 34px;color:#dbe6f5}.hero .row{display:flex;gap:14px;flex-wrap:wrap}
+.hero .trust{display:flex;gap:26px;margin-top:38px;flex-wrap:wrap;font-size:15px;color:#cfdcee}.hero .trust b{color:#fff}
+.bar{position:relative;z-index:5;margin-top:-62px}.bar .w>div{background:#fff;border-radius:16px;box-shadow:0 20px 50px rgba(11,31,58,.18);display:grid;grid-template-columns:repeat(4,1fr)}
+.bar .it{padding:28px;text-align:center;border-right:1px solid #e6edf6}.bar .it:last-child{border:0}
+.bar strong{display:block;font:800 44px Outfit;color:var(--or)}.bar span{color:var(--mute);font-size:15px}
+.about .w{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about .imgs{display:grid;grid-template-columns:1fr 1fr;gap:16px}.about .imgs .media{border-radius:16px;height:240px}.about .imgs .media:first-child{grid-row:span 2;height:496px}
+.vals{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:26px 0 30px}.vals div{background:var(--g);border-left:4px solid var(--or);padding:16px 18px;border-radius:8px}.vals b{font-family:Outfit;color:var(--navy);display:block}.vals span{font-size:15px;color:var(--mute)}
+.svc{background:var(--g)}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 6px 24px rgba(11,31,58,.07);transition:.25s}.card:hover{transform:translateY(-6px);box-shadow:0 16px 38px rgba(11,31,58,.15)}
+.card .media{height:170px}.card .b{padding:22px}.card h3{font-size:21px;margin-bottom:8px}.card p{font-size:15px;color:var(--mute)}
+.ic{width:48px;height:48px;border-radius:12px;background:var(--or);color:#fff;display:grid;place-items:center;font-size:24px;margin:-46px 0 14px;position:relative;box-shadow:0 6px 14px rgba(255,106,19,.4)}
+.cta{background:linear-gradient(110deg,var(--navy),var(--navy2) 60%,var(--blue));color:#fff;padding:70px 0}.cta .w{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}.cta h2{color:#fff;margin:0}.cta p{color:#cfdcee}
+.filters{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:30px}.filters button{border:2px solid #d5e0ee;background:#fff;color:var(--navy);padding:9px 22px;border-radius:99px;font:600 15px Inter;cursor:pointer}.filters .on,.filters button:hover{background:var(--or);border-color:var(--or);color:#fff}
+.pj{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/3}.pj .media{position:absolute;inset:0}.pj:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(11,31,58,.95))}
+.pj .t{position:absolute;left:20px;right:20px;bottom:18px;z-index:2;color:#fff}.pj .t b{font:700 22px Outfit;display:block}.pj .t small{color:#ffc9a3}
+.pj .st{position:absolute;top:14px;left:14px;z-index:2;background:var(--or);color:#fff;font-size:12px;font-weight:600;padding:4px 12px;border-radius:99px}.pj.done .st{background:#1f9d55}
+.pj.hide{display:none}.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.proc{background:var(--navy);color:#fff}.proc h2{color:#fff}.proc .sub{color:#b9c9de}.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;counter-reset:s}
+.step{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:22px 18px;counter-increment:s}.step:before{content:counter(s);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--or);font:800 18px Outfit;margin-bottom:14px}
+.step h3{color:#fff;font-size:19px;margin-bottom:6px}.step p{font-size:14px;color:#b9c9de;line-height:1.5}
+.why .grid{grid-template-columns:repeat(3,1fr)}.why .bx{padding:30px;border-radius:16px;border:1px solid #e1e9f3;background:#fff}.why .bx:hover{border-color:var(--or);box-shadow:0 12px 30px rgba(255,106,19,.12)}.why .bx .ic{margin:0 0 16px}.why p{font-size:15px;color:var(--mute)}
+.eq{background:var(--sky)}.eq .g4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.eq .g4 div{background:#fff;border-radius:12px;padding:20px;text-align:center;font-weight:600;color:var(--navy)}.eq .g4 span{display:block;font-size:34px}
+.team .card{text-align:center}.av{width:110px;height:110px;border-radius:50%;margin:26px auto 14px;background:linear-gradient(135deg,var(--or),var(--blue));color:#fff;display:grid;place-items:center;font:800 36px Outfit}
+.tst{background:var(--g)}.q{background:#fff;border-radius:16px;padding:30px;box-shadow:0 6px 24px rgba(11,31,58,.07)}.q .s{color:#f5a623;letter-spacing:3px;margin-bottom:10px}.q p{margin-bottom:16px}.q b{font-family:Outfit;color:var(--navy)}.q small{display:block;color:var(--mute)}
+.logos{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}.logos span{border:2px dashed #cbd8e8;border-radius:10px;padding:14px 26px;font:700 18px Outfit;color:#8ea1b8}
+.faq details{background:#fff;border:1px solid #dfe8f3;border-radius:12px;padding:18px 22px;margin-bottom:12px;max-width:860px;margin-left:auto;margin-right:auto}.faq summary{font:600 18px Outfit;color:var(--navy);cursor:pointer}.faq details[open]{border-color:var(--or)}.faq details p{margin-top:10px;color:var(--mute);font-size:16px}
+.contact{background:linear-gradient(180deg,var(--sky),#fff)}.contact .w{display:grid;grid-template-columns:1fr 1.15fr;gap:50px}
+.ci{display:flex;gap:16px;margin:18px 0;align-items:flex-start}.ci .ic{margin:0;flex:none}.ci a{font-weight:600;text-decoration:none;color:var(--navy)}.ci small{color:var(--mute);display:block}
+form{background:#fff;border-radius:18px;padding:34px;box-shadow:0 20px 50px rgba(11,31,58,.13);display:grid;gap:14px;grid-template-columns:1fr 1fr}form .f{grid-column:1/-1}
+label{font-weight:600;font-size:14px;display:grid;gap:6px}input,select,textarea{font:inherit;padding:13px;border:2px solid #dbe5f1;border-radius:10px;width:100%;background:#fbfdff}input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue)}
+iframe.map{width:100%;height:460px;border:0;display:block}
+.news{background:var(--or);color:#fff;padding:44px 0}.news .w{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.news h3{color:#fff;font-size:28px}.news form{display:flex;padding:0;box-shadow:none;background:none;gap:10px}.news input{min-width:260px}
+footer{background:var(--navy);color:#b3c3d8;padding:64px 0 22px;font-size:15px}footer .w{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:36px}footer h4{color:#fff;font-size:20px;margin-bottom:12px}footer a{display:block;text-decoration:none;margin:7px 0}footer a:hover{color:var(--or)}
+.cp{max-width:1200px;margin:36px auto 0;padding:20px 22px 0;border-top:1px solid #20406b;text-align:center;font-size:14px}
+.fl{position:fixed;right:20px;bottom:20px;z-index:99;display:flex;flex-direction:column;gap:12px;align-items:flex-end}
+.fw{width:64px;height:64px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.3);position:relative}.fw:after{content:"";position:absolute;inset:0;border-radius:50%;border:3px solid var(--wa);animation:p 2.2s infinite}
+@keyframes p{to{transform:scale(1.6);opacity:0}}.fc{background:var(--or);color:#fff;padding:11px 18px;border-radius:99px;font-weight:600;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.25)}.tip{background:#fff;padding:8px 14px;border-radius:10px;font-size:14px;font-weight:600;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+@media(max-width:1000px){.grid,.eq .g4{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr 1fr}.about .w,.contact .w{grid-template-columns:1fr}footer .w{grid-template-columns:1fr 1fr}.why .grid,.g3{grid-template-columns:1fr 1fr}.bar .w>div{grid-template-columns:1fr 1fr}
+.menu{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:22px;box-shadow:0 14px 24px rgba(0,0,0,.1)}.menu.open{display:flex}.burger{display:block}}
+@media(max-width:620px){section{padding:64px 0}.grid,.g3,.steps,.why .grid,.eq .g4,form{grid-template-columns:1fr}.about .imgs .media:first-child{height:240px;grid-row:auto}.top .w span:last-child,.tip{display:none}.vals{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body>
+<div class="top"><div class="w"><span>Licensed &amp; insured building contractor | Mon–Sat 7:30am–6:00pm</span><span>Free site visit: <a href="tel:+256786768872">0786 768 872</a></span></div></div>
+<header><div class="w"><nav><a class="logo" href="#top"><i>NXT</i>Construction</a>
+<button class="burger" onclick="m.classList.toggle('open')" aria-label="Menu">Menu</button>
+<ul class="menu" id="m"><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#projects">Projects</a></li><li><a href="#process">Process</a></li><li><a href="#team">Team</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li><li><a class="btn b1" style="padding:11px 22px;color:#fff" href="#quote">Get a quote</a></li></ul></nav></div></header>
+<main id="top">
+<section class="hero" style="padding:0"><div class="media" data-art="skyline" data-img="photo-1541888946425-d81bb19240f5"></div>
+<div class="w"><span class="pill">Building Uganda's next landmarks</span><h1>Construction that stands <em>strong</em></h1>
+<p>NXT Construction delivers residential, commercial and civil projects with engineering precision, honest pricing and on-time handover.</p>
+<div class="row"><a class="btn b1" href="#quote">Get a free quote</a><a class="btn b2" href="tel:+256786768872">Call 0786 768 872</a></div>
+<div class="trust"><span><b>12+</b> years experience</span><span><b>150+</b> projects delivered</span><span><b>5-year</b> structural warranty</span></div></div></section>
+<div class="bar"><div class="w"><div><div class="it"><strong data-n="150">0</strong><span>Projects completed</span></div><div class="it"><strong data-n="12">0</strong><span>Years in business</span></div><div class="it"><strong data-n="80">0</strong><span>Skilled professionals</span></div><div class="it"><strong data-n="98">0</strong><span>% client satisfaction</span></div></div></div></div>
+
+<section class="about" id="about"><div class="w"><div class="imgs"><div class="media" data-art="house" data-img="photo-1503387762-592deb58ef4e"></div><div class="media" data-art="plan" data-img="photo-1581094794329-c8112a89af12"></div><div class="media" data-art="crane" data-img="photo-1504307651254-35680f356dfd"></div></div>
+<div><span class="tag">About NXT Construction</span><h2>Your trusted building partner from foundation to finish</h2>
+<p>We are a full-service contractor combining qualified engineers, experienced site supervisors and reliable suppliers. One accountable team handles design coordination, permits, procurement, construction and handover, so you deal with one contact and one clear contract.</p>
+<div class="vals"><div><b>Our mission</b><span>Build safe, durable structures that deliver lasting value.</span></div><div><b>Our vision</b><span>To be East Africa's most trusted construction brand.</span></div><div><b>Integrity</b><span>Transparent costs, honest timelines, no surprises.</span></div><div><b>Safety</b><span>Zero-harm sites with trained, insured crews.</span></div></div>
+<a class="btn b1" href="#quote">Discuss your project</a></div></div></section>
+
+<section class="svc" id="services"><div class="w c"><span class="tag">Our services</span><h2>Complete construction solutions</h2><p class="sub">From a family home to a commercial complex, we cover every stage with in-house expertise.</p><div class="grid" id="svc" style="text-align:left"></div></div></section>
+
+<div class="cta"><div class="w"><div><h2>Ready to start your project?</h2><p>Book a free site visit and get a detailed quotation within 48 hours.</p></div><div><a class="btn b1" href="#quote">Request a quote</a> <a class="btn b2" href="https://wa.me/256786768872" target="_blank" rel="noopener">WhatsApp us</a></div></div></div>
+
+<section id="projects"><div class="w c"><span class="tag">Our portfolio</span><h2>Projects we're proud of</h2><p class="sub">Completed and ongoing work across residential, commercial and civil sectors.</p>
+<div class="filters"><button class="on" data-f="all">All</button><button data-f="Residential">Residential</button><button data-f="Commercial">Commercial</button><button data-f="Civil">Civil works</button></div>
+<div class="g3" id="pj" style="text-align:left"></div></div></section>
+
+<section class="proc" id="process"><div class="w c"><span class="tag">How we work</span><h2>A clear, six-step process</h2><p class="sub">Every project follows the same disciplined path, so you always know what comes next.</p><div class="steps" style="text-align:left">
+<div class="step"><h3>Consultation</h3><p>Site visit, needs and budget discussion.</p></div><div class="step"><h3>Design &amp; BOQ</h3><p>Drawings and a detailed bill of quantities.</p></div><div class="step"><h3>Approvals</h3><p>Permits and regulatory paperwork handled.</p></div><div class="step"><h3>Construction</h3><p>Supervised building with weekly updates.</p></div><div class="step"><h3>Inspection</h3><p>Quality checks at every stage.</p></div><div class="step"><h3>Handover</h3><p>Final snagging, keys and warranty.</p></div></div></div></section>
+
+<section class="why"><div class="w c"><span class="tag">Why NXT</span><h2>Why clients choose us</h2><p class="sub">Six reasons homeowners, developers and businesses keep coming back.</p><div class="grid" id="why" style="text-align:left"></div></div></section>
+
+<section class="eq"><div class="w c"><span class="tag">Capability</span><h2>Equipment &amp; in-house capacity</h2><p class="sub">Our own machinery and trades keep schedules tight and costs controlled.</p><div class="g4"><div><span>🚜</span>Excavators &amp; graders</div><div><span>🏗️</span>Scaffolding &amp; formwork</div><div><span>🚛</span>Tippers &amp; delivery trucks</div><div><span>🧱</span>Concrete mixers &amp; vibrators</div><div><span>⚡</span>Electrical &amp; solar crew</div><div><span>🚿</span>Plumbing &amp; drainage crew</div><div><span>🎨</span>Finishing &amp; joinery team</div><div><span>📐</span>Survey &amp; setting-out tools</div></div></div></section>
+
+<section class="team" id="team"><div class="w c"><span class="tag">Our people</span><h2>Meet the leadership team</h2><p class="sub">Experienced professionals accountable for your project. (Replace names with your actual team.)</p><div class="grid" id="tm" style="text-align:left"></div></div></section>
+
+<section class="tst"><div class="w c"><span class="tag">Testimonials</span><h2>What our clients say</h2><p class="sub">Sample reviews. Replace with real client feedback.</p><div class="g3" style="text-align:left">
+<div class="q"><div class="s">★★★★★</div><p>NXT finished our family home two weeks early. The finishing quality is excellent and the site was always tidy.</p><b>Sarah N.</b><small>Homeowner, Entebbe</small></div>
+<div class="q"><div class="s">★★★★★</div><p>Honest pricing and clear weekly reports. They handled our apartment block without a single surprise cost.</p><b>David K.</b><small>Property developer</small></div>
+<div class="q"><div class="s">★★★★★</div><p>From foundation to roof on our warehouse, the team was professional, safe and fast.</p><b>Grace A.</b><small>Business owner</small></div></div>
+<h3 style="margin:60px 0 20px">Trusted by partners and suppliers</h3><div class="logos"><span>Cement Supplier</span><span>Steel Partner</span><span>Roofing Co.</span><span>Bank Finance</span><span>Insurance Partner</span></div></div></section>
+
+<section class="faq" id="faq"><div class="w c"><span class="tag">FAQ</span><h2>Common questions</h2><p class="sub">Quick answers before you call.</p><div style="text-align:left">
+<details><summary>Is the site visit and quotation free?</summary><p>Yes. We visit your site, discuss your plans and send a detailed quotation at no charge.</p></details>
+<details><summary>How long does building a house take?</summary><p>A typical 3-4 bedroom home takes 6 to 9 months depending on design, weather and approvals. We agree a schedule before we start.</p></details>
+<details><summary>Do you help with building permits and drawings?</summary><p>Yes. We coordinate architects, engineers and approvals so the process is handled for you.</p></details>
+<details><summary>Do you offer a warranty?</summary><p>All our work carries a defects-liability period and structural warranty, detailed in your contract.</p></details>
+<details><summary>Can I pay in stages?</summary><p>Yes. Payments are tied to completed milestones, so you only pay for work delivered.</p></details></div></div></section>
+
+<section class="contact" id="quote"><div class="w"><div id="contact"><span class="tag">Contact us</span><h2>Let's talk about your project</h2><p class="sub" style="margin-bottom:20px">We respond the same working day.</p>
+<div class="ci"><div class="ic">📞</div><div><small>Call or WhatsApp</small><a href="tel:+256786768872">0786 768 872</a></div></div>
+<div class="ci"><div class="ic">✉️</div><div><small>Email</small><a href="mailto:info@nxtconstruction.com">info@nxtconstruction.com</a></div></div>
+<div class="ci"><div class="ic">📍</div><div><small>Office</small><a>Entebbe, Uganda</a></div></div>
+<div class="ci"><div class="ic">🕖</div><div><small>Working hours</small><a>Mon–Sat, 7:30am–6:00pm</a></div></div></div>
+<form id="qf"><label>Full name<input name="n" required></label><label>Phone<input name="p" type="tel" required></label>
+<label>Project type<select name="t"><option>Residential building</option><option>Commercial building</option><option>Civil works</option><option>Renovation</option><option>Project management</option></select></label>
+<label>Budget range<select name="b"><option>Not sure yet</option><option>Under UGX 100M</option><option>UGX 100M–500M</option><option>Above UGX 500M</option></select></label>
+<label class="f">Project details<textarea name="d" rows="4" placeholder="Location, size, timeline"></textarea></label><button class="btn b1 f" type="submit">Send request via WhatsApp</button></form></div></section>
+<iframe class="map" title="NXT Construction location" loading="lazy" src="https://maps.google.com/maps?q=Entebbe%2C%20Uganda&z=13&output=embed"></iframe>
+</main>
+<div class="news"><div class="w"><div><h3>Get building tips &amp; project updates</h3></div><form onsubmit="event.preventDefault();window.open('https://wa.me/256786768872?text='+encodeURIComponent('Please add '+this.e.value+' to your updates list.'))"><input name="e" type="email" placeholder="Your email" required><button class="btn b3">Subscribe</button></form></div></div>
+<footer><div class="w"><div><h4>NXT Construction</h4><p>Quality building, civil works and project management delivered with integrity and care.</p></div>
+<div><h4>Company</h4><a href="#about">About us</a><a href="#projects">Projects</a><a href="#team">Team</a><a href="#faq">FAQ</a></div>
+<div><h4>Services</h4><a href="#services">Residential</a><a href="#services">Commercial</a><a href="#services">Civil works</a><a href="#services">Renovation</a></div>
+<div><h4>Contact</h4><a href="tel:+256786768872">0786 768 872</a><a href="https://wa.me/256786768872">WhatsApp</a><a href="mailto:info@nxtconstruction.com">info@nxtconstruction.com</a><a href="#contact">Entebbe, Uganda</a></div></div><div class="cp">© <span id="y"></span> NXT Construction. All rights reserved.</div></footer>
+<div class="fl"><span class="tip">Chat with us</span><a class="fc" href="tel:+256786768872">📞 Call now</a><a class="fw" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" href="https://wa.me/256786768872?text=Hello%20NXT%20Construction%2C%20I%27d%20like%20a%20quote."><svg width="34" height="34" viewBox="0 0 32 32" fill="#fff"><path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.4.7 4.7 1.9 6.6L3.2 29l7.1-2.1c1.8 1 3.8 1.5 5.7 1.5 7 0 12.600-5.600 12.600-12.500C28.600 8.600 23 3 16 3zm0 22.800c-1.800 0-3.600-.5-5.100-1.400l-.4-.2-4.200 1.200 1.200-4-.3-.4a10 10 0 0 1-1.600-5.500C5.600 9.900 10.300 5.300 16 5.300s10.400 4.600 10.400 10.200S21.700 25.800 16 25.800zm5.700-7.500c-.3-.2-1.800-.9-2.100-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.400 8.400 0 0 1-4.200-3.700c-.3-.6.300-.5.900-1.600.1-.2 0-.4 0-.5l-1-2.300c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400s-1 1-1 2.500 1.100 2.900 1.200 3.100c.2.200 2.100 3.300 5.200 4.500 2.600 1 3.100.8 3.600.8.600-.1 1.800-.7 2-1.400.3-.7.300-1.300.2-1.400s-.3-.2-.6-.4z"/></svg></a></div>
+<script>
+let U=0;const P="https://images.unsplash.com/";
+function art(t){const i=++U,sk={skyline:["#0b1f3a","#1E88E5"],house:["#8ecbff","#e8f4ff"],crane:["#ffb27a","#ffe6cf"],road:["#6fb4f2","#dff0ff"],plan:["#0f4c8a","#1565c0"],wh:["#9ccdf7","#eaf5ff"],reno:["#f6d9bd","#fff3e6"],tower:["#2b6cb0","#bfe0ff"]}[t]||["#1E88E5","#bfe0ff"];
+const win=(x,y,w,h,c="#fff",o=.7)=>`<path d="M${x} ${y}h${w}" stroke="${c}" stroke-width="5" stroke-dasharray="6 9" opacity="${o}"/>`;let s="";
+if(t=="skyline"||t=="tower")s=`<circle cx="320" cy="70" r="26" fill="#FF6A13" opacity=".9"/><rect x="40" y="130" width="60" height="170" fill="#16406f"/><rect x="110" y="70" width="70" height="230" fill="#1d5a9c"/><rect x="190" y="110" width="60" height="190" fill="#16406f"/><rect x="260" y="60" width="80" height="240" fill="#2370b8"/><rect x="345" y="140" width="50" height="160" fill="#16406f"/>${[90,105,120,135,150,165,180,195,210,225,240].map(y=>win(116,y,56)+win(266,y-8,68,"#fff",.6)).join("")}<rect y="270" width="400" height="30" fill="#0b1f3a"/>`;
+if(t=="house")s=`<circle cx="330" cy="60" r="30" fill="#FFD54F"/><rect y="230" width="400" height="70" fill="#7cc576"/><rect x="90" y="140" width="220" height="100" fill="#fff"/><polygon points="70,145 200,70 330,145" fill="#FF6A13"/><rect x="120" y="165" width="45" height="45" fill="#8ecbff"/><rect x="235" y="165" width="45" height="45" fill="#8ecbff"/><rect x="182" y="180" width="38" height="60" fill="#12305a"/><circle cx="45" cy="205" r="30" fill="#4caf50"/><rect x="42" y="225" width="6" height="25" fill="#6d4c41"/><circle cx="360" cy="215" r="24" fill="#43a047"/>`;
+if(t=="crane")s=`<rect y="250" width="400" height="50" fill="#8d6e63"/><rect x="90" y="150" width="190" height="100" fill="#cfd8dc"/><path d="M90 150h190M90 185h190M90 220h190M137 150v100M185 150v100M232 150v100" stroke="#607d8b" stroke-width="3" fill="none"/><rect x="300" y="40" width="12" height="210" fill="#FF6A13"/><path d="M300 90l12 30M312 90l-12 30M300 130l12 30M312 130l-12 30M300 170l12 30M312 170l-12 30" stroke="#c94a00" stroke-width="2"/><rect x="40" y="36" width="290" height="10" fill="#FF6A13"/><rect x="288" y="26" width="34" height="16" fill="#12305a"/><path d="M80 46v62" stroke="#333" stroke-width="2"/><rect x="68" y="108" width="24" height="14" fill="#ffd54f"/>`;
+if(t=="road")s=`<circle cx="200" cy="130" r="34" fill="#FFB74D"/><path d="M0 170l90-45 70 45 80-55 160 70v70H0z" fill="#4a90c2" opacity=".5"/><rect y="170" width="400" height="130" fill="#5ea85a"/><polygon points="170,170 230,170 400,300 0,300" fill="#455a64"/><path d="M200 175l0 125" stroke="#fff" stroke-width="6" stroke-dasharray="14 14"/>`;
+if(t=="plan")s=`<path d="${Array.from({length:14},(_,k)=>`M${k*30} 0v300`).join("")}${Array.from({length:10},(_,k)=>`M0 ${k*30}h400`).join("")}" stroke="#fff" opacity=".15"/><path d="M80 70h240v170H80zM80 150h120M200 70v80M250 150v90M130 240v-30" fill="none" stroke="#fff" stroke-width="4"/><path d="M80 260h240M80 254v12M320 254v12" stroke="#FF6A13" stroke-width="3"/><circle cx="320" cy="70" r="0"/>`;
+if(t=="wh")s=`<rect y="240" width="400" height="60" fill="#78909c"/><rect x="50" y="120" width="300" height="120" fill="#cfd8dc"/><polygon points="40,125 200,80 360,125" fill="#FF6A13"/><rect x="80" y="165" width="60" height="75" fill="#546e7a"/><rect x="170" y="165" width="60" height="75" fill="#546e7a"/><rect x="260" y="165" width="60" height="75" fill="#546e7a"/><rect x="20" y="228" width="70" height="22" fill="#12305a"/>`;
+if(t=="reno")s=`<rect y="230" width="400" height="70" fill="#a1887f"/><rect x="60" y="60" width="280" height="170" fill="#fff"/><rect x="90" y="90" width="90" height="70" fill="#bfe0ff"/><rect x="220" y="90" width="90" height="70" fill="#bfe0ff"/><rect x="100" y="185" width="120" height="45" rx="8" fill="#FF6A13"/><rect x="250" y="170" width="50" height="60" fill="#12305a"/>`;
+return `<svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="a${i}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${sk[0]}"/><stop offset="1" stop-color="${sk[1]}"/></linearGradient></defs><rect width="400" height="300" fill="url(#a${i})"/>${s}</svg>`}
+function med(art_,img,alt=""){return `<div class="media" data-art="${art_}" data-img="${img}"></div>`}
+function hydrate(root=document){root.querySelectorAll(".media[data-art]").forEach(e=>{if(e.dataset.d)return;e.dataset.d=1;e.innerHTML=art(e.dataset.art);const im=new Image();im.alt="";im.loading="lazy";im.onload=()=>im.classList.add("ok");im.src=P+e.dataset.img+"?auto=format&fit=crop&w=1200&q=70";e.appendChild(im)})}
+const svc=[["🏠","Residential building","Custom homes, villas and apartments.","house","photo-1600585154340-be6161a56a0c"],["🏢","Commercial building","Offices, retail, hotels and schools.","skyline","photo-1486406146926-c627a92ad1ab"],["🛣️","Roads &amp; civil works","Roads, drainage, culverts, earthworks.","road","photo-1589939705384-5185137a7f0f"],["🏭","Industrial &amp; warehouses","Steel-frame factories and storage.","wh","photo-1541888946425-d81bb19240f5"],["🛠️","Renovation &amp; extension","Upgrade or restore existing buildings.","reno","photo-1503387762-592deb58ef4e"],["📐","Design &amp; BOQ","Architectural drawings and costing.","plan","photo-1581094794329-c8112a89af12"],["🏗️","Project management","Scheduling, cost control, supervision.","crane","photo-1504307651254-35680f356dfd"],["🎨","Finishing &amp; fit-out","Tiling, painting, ceilings, joinery.","reno","photo-1621905251189-08b45d6a269e"]];
+document.getElementById("svc").innerHTML=svc.map(s=>`<article class="card">${med(s[3],s[4])}<div class="b"><div class="ic">${s[0]}</div><h3>${s[1]}</h3><p>${s[2]}</p></div></article>`).join("");
+const pj=[["Lakeview Villa","Residential","Entebbe","done","house","photo-1600585154340-be6161a56a0c"],["Plaza Office Block","Commercial","Kampala","done","tower","photo-1486406146926-c627a92ad1ab"],["Access Road Upgrade","Civil","3.2 km","ongoing","road","photo-1589939705384-5185137a7f0f"],["Hillside Apartments","Residential","24 units","ongoing","crane","photo-1503387762-592deb58ef4e"],["Logistics Warehouse","Commercial","Steel frame","done","wh","photo-1541888946425-d81bb19240f5"],["Estate Drainage Works","Civil","Site development","done","road","photo-1504307651254-35680f356dfd"]];
+document.getElementById("pj").innerHTML=pj.map(p=>`<figure class="pj ${p[3]}" data-c="${p[1]}">${med(p[4],p[5])}<span class="st">${p[3]=="done"?"Completed":"Ongoing"}</span><figcaption class="t"><b>${p[0]}</b><small>${p[1]} · ${p[2]}</small></figcaption></figure>`).join("");
+const why=[["⏱️","On-time delivery","Weekly progress tracking catches delays early."],["💰","Transparent pricing","Detailed BOQ and approved variations only."],["🦺","Safety first","PPE, inductions and insured workers."],["👷","Qualified engineers","Licensed professionals supervise every site."],["🧱","Quality materials","Tested, certified materials from trusted suppliers."],["🛡️","Warranty","Defects-liability period and structural warranty."]];
+document.getElementById("why").innerHTML=why.map(w=>`<div class="bx"><div class="ic">${w[0]}</div><h3>${w[1]}</h3><p>${w[2]}</p></div>`).join("");
+document.getElementById("tm").innerHTML=[["JM","Managing Director","Civil engineer, 15 yrs"],["AK","Head of Projects","Project manager, PMP"],["RN","Chief Engineer","Structural engineer"],["SB","Site Operations Lead","Safety &amp; quality"]].map(t=>`<div class="card"><div class="av">${t[0]}</div><div class="b"><h3>Team Member</h3><p><b>${t[1]}</b><br>${t[2]}</p></div></div>`).join("");
+hydrate();
+document.querySelectorAll(".filters button").forEach(b=>b.onclick=()=>{document.querySelectorAll(".filters button").forEach(x=>x.classList.remove("on"));b.classList.add("on");document.querySelectorAll(".pj").forEach(p=>p.classList.toggle("hide",b.dataset.f!="all"&&p.dataset.c!=b.dataset.f))});
+document.querySelectorAll(".menu a").forEach(a=>a.onclick=()=>m.classList.remove("open"));
+document.getElementById("y").textContent=new Date().getFullYear();
+document.getElementById("qf").onsubmit=e=>{e.preventDefault();const f=e.target;window.open("https://wa.me/256786768872?text="+encodeURIComponent(`Hello NXT Construction,\nName: ${f.n.value}\nPhone: ${f.p.value}\nProject: ${f.t.value}\nBudget: ${f.b.value}\nDetails: ${f.d.value}`),"_blank")};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,n=+el.dataset.n;let c=0;const t=setInterval(()=>{c+=Math.ceil(n/40);if(c>=n){c=n;clearInterval(t)}el.textContent=c+(n==150||n==12||n==80?"+":"")},30);io.unobserve(el)}));document.querySelectorAll("[data-n]").forEach(e=>io.observe(e));
+</script></body></html>
